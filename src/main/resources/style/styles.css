@@ -1,3 +1,9 @@
+.LogBTN
+{
+    -fx-background-color: linear-gradient(to bottom left, #A868A0, #2D75E8);
+     -fx-background-radius :  30 30 30 30;
+}
+
 
 .btn1:actionIcon {
 -fx-background-color :#be2edd;
