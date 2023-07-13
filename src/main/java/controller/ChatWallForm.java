@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-
 package controller;
 
         import com.jfoenix.controls.JFXTextArea;
@@ -16,6 +8,7 @@ package controller;
 
         import java.io.DataInputStream;
         import java.io.DataOutputStream;
+        import java.io.File;
         import java.io.IOException;
         import java.net.Socket;
 
@@ -38,10 +31,10 @@ public class ChatWallForm {
                 System.out.println(username);
                 dataOutputStream = new DataOutputStream(socket.getOutputStream());
                 dataInputStream = new DataInputStream(socket.getInputStream());
-                ClientFormController clientFormController = new ClientFormController(socket,username, dataOutputStream,dataInputStream);
-                //lblUserName.setText(LoginFormController.getUserName());
+                Client client = new Client(socket,username, dataOutputStream,dataInputStream);
+                //lblUserName.setText(LoginForm.getUserName());
                 listenForMessages();
-                clientFormController.sendUserName();
+                client.sendUserName();
             } catch (IOException e) {
                 e.printStackTrace();
             }

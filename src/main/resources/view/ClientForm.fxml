@@ -19,7 +19,7 @@
       </JFXTextField>
       <ImageView fitHeight="111.0" fitWidth="165.0" layoutX="-8.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../img/fevicon.png" />
+            <Image url="@../img/LOGO.png" />
          </image>
       </ImageView>
       <Label layoutX="204.0" layoutY="701.0" prefHeight="77.0" prefWidth="95.0" text="Chat">
@@ -54,7 +54,7 @@
       </ImageView>
       <JFXButton layoutX="382.0" layoutY="620.0" onAction="#cameraBtnOnAction" prefHeight="52.0" prefWidth="45.0" text=" " />
       <JFXButton layoutX="338.0" layoutY="619.0" onAction="#btnSendImage" prefHeight="52.0" prefWidth="39.0" text=" " />
-      <Label fx:id="lblUserName" layoutX="125.0" layoutY="44.0" prefHeight="52.0" prefWidth="205.0" text="ASA">
+      <Label fx:id="lblUserName" layoutX="125.0" layoutY="44.0" prefHeight="52.0" prefWidth="205.0">
          <font>
             <Font name="System Bold Italic" size="18.0" />
          </font>
