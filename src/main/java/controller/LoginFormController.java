@@ -10,15 +10,15 @@ import java.io.IOException;
 import java.net.URL;
 
 public class LoginFormController {
-
-
-
-    private static String username;
-    public AnchorPane LoginContext;
+    public AnchorPane loginpane;
     public JFXTextField txtUserName;
+    private static String username;
+    public AnchorPane clientPane;
+    public AnchorPane LoginContext;
+    public JFXTextField txtwriteMassage;
 
     public void btnJoinOnAction(ActionEvent event) {
-        username = txtUserName.getText();
+       username = txtUserName.getText();
         try {
             loadClient();
         } catch (IOException e) {
@@ -38,5 +38,12 @@ public class LoginFormController {
         return username;
     }
 
+    public void btnSentMassageOnAction(ActionEvent actionEvent) {
+    }
 
+    public void cameraBtnOnAction(ActionEvent actionEvent) {
+    }
+
+    public void btnSendImage(ActionEvent actionEvent) {
+    }
 }
