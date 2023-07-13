@@ -27,7 +27,7 @@ public class LoginFormController {
     }
 
     public void loadClient() throws IOException {
-        URL resource = getClass().getResource("/view/client_form.fxml");
+        URL resource = getClass().getResource("/view/ClientForm.fxml");
         assert resource != null;
         Parent load = FXMLLoader.load(resource);
         LoginContext.getChildren().clear();
